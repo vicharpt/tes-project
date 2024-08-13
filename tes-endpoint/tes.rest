@@ -1,0 +1,28 @@
+POST http://localhost:5000/register
+Content-Type: application/json
+
+{
+    "name": "joedi",
+    "email" : "joe@gmail.com",
+    "password": "123123",
+    "gender": "L"
+}
+
+###
+POST  http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "joe@gmail.com",
+    "password": "123123"
+}
+
+###
+http://localhost:5000/token
+
+###
+http://localhost:5000/api/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6ImpvZWRpIiwiZW1haWwiOiJqb2VAZ21haWwuY29tIiwiaWF0IjoxNzIzMjk3MDY4LCJleHAiOjE3MjMyOTcwODN9.1TPvQCwTfZjoGgQNG6SUw0dbHuHDqNbuPh1bbdKU4EQ
+
+###
+DELETE http://localhost:5000/logout
